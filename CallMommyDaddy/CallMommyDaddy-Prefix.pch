@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'CallMommyDaddy' target in the 'CallMommyDaddy' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
