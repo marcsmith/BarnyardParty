@@ -33,6 +33,7 @@
 		455B03F213AC0FDD001CD39C /* AppDelegate.h in Resources */ = {isa = PBXBuildFile; fileRef = 455B03F113AC0FDD001CD39C /* AppDelegate.h */; };
 		455B03F413AC0FDD001CD39C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 455B03F313AC0FDD001CD39C /* AppDelegate.m */; };
 		455B03F713AC0FDD001CD39C /* README in Resources */ = {isa = PBXBuildFile; fileRef = 455B03F613AC0FDD001CD39C /* README */; };
+		455B03FE13AC10B1001CD39C /* www in Resources */ = {isa = PBXBuildFile; fileRef = 455B03FD13AC10B1001CD39C /* www */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +53,7 @@
 		455B03D513AC0FDD001CD39C /* CallMommyDaddy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CallMommyDaddy-Info.plist"; sourceTree = "<group>"; };
 		455B03D813AC0FDD001CD39C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		455B03DA13AC0FDD001CD39C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		455B03DC13AC0FDD001CD39C /* CallMommyDaddy-Prefix.pch */ = {isa = PBXFileReference; path = "CallMommyDaddy-Prefix.pch"; sourceTree = "<group>"; };
+		455B03DC13AC0FDD001CD39C /* CallMommyDaddy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CallMommyDaddy-Prefix.pch"; sourceTree = "<group>"; };
 		455B03DD13AC0FDD001CD39C /* PhoneGap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhoneGap.framework; path = /Users/Shared/PhoneGap/Frameworks/PhoneGap.framework; sourceTree = "<absolute>"; };
 		455B03E113AC0FDD001CD39C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/icons/icon.png; sourceTree = "<group>"; };
 		455B03E313AC0FDD001CD39C /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/icons/icon@2x.png"; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 		455B03F113AC0FDD001CD39C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		455B03F313AC0FDD001CD39C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
 		455B03F613AC0FDD001CD39C /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		455B03FD13AC10B1001CD39C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		455B03A913AC0FDD001CD39C = {
 			isa = PBXGroup;
 			children = (
+				455B03FD13AC10B1001CD39C /* www */,
 				455B03D313AC0FDD001CD39C /* CallMommyDaddy */,
 				455B03BA13AC0FDD001CD39C /* Frameworks */,
 				455B03B813AC0FDD001CD39C /* Products */,
@@ -267,6 +270,7 @@
 				455B03EF13AC0FDD001CD39C /* PhoneGap.plist in Resources */,
 				455B03F213AC0FDD001CD39C /* AppDelegate.h in Resources */,
 				455B03F713AC0FDD001CD39C /* README in Resources */,
+				455B03FE13AC10B1001CD39C /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +378,9 @@
 				GCC_PREFIX_HEADER = "CallMommyDaddy/CallMommyDaddy-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
 				INFOPLIST_FILE = "CallMommyDaddy/CallMommyDaddy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -390,7 +396,9 @@
 				GCC_PREFIX_HEADER = "CallMommyDaddy/CallMommyDaddy-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
 				INFOPLIST_FILE = "CallMommyDaddy/CallMommyDaddy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

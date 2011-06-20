@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="css/ipad.css" type="text/css" />
+	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="css/iphone.css" type="text/css" />
+
+	<script src="js/raphael-min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/phonegap.0.9.5.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+	// If you want to prevent dragging, uncomment this section
+	/*
+	function preventBehavior(e) 
+	{ 
+      e.preventDefault(); 
+    };
+	document.addEventListener("touchmove", preventBehavior, false);
+	*/
+	
+	/* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
+	see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
+	for more details -jm */
+	/*
+	function handleOpenURL(url)
+	{
+		// TODO: do something with the url passed in.
+	}
+	*/
+	
+	function onBodyLoad()
+	{		
+		document.addEventListener("deviceready",onDeviceReady,false);
+	}
+	
+	/* When this function is called, PhoneGap has been initialized and is ready to roll */
+	/* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
+	see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
+	for more details -jm */
+	function onDeviceReady()
+	{
+		// do your thing!
+		navigator.notification.alert("PhoneGap is working")
+	}
+    
+    </script>
+  </head>
+  <body onload="onBodyLoad()">
+		<!-- p><a href="facetime://16466206566"><img src="img/daddy.png"/></a></p -->
+		
+		
+		
+		<div id="barn">
+<!--			<div id="roof"></div>
+			<div id="floors">
+-->			<div id="topFloor" class="clearfix">
+				<ul>
+					<li>pig</li>
+					<li>cow</li>
+					<li>horse</li>
+				</ul>
+			</div>
+			<div id="bottomFloor" class="clearfix">
+				<ul>
+					<li>sheep</li>
+					<li>donkey</li>
+					<li>goat</li>
+				</ul>
+			</div>
+<!--			</div>
+-->		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+  </body>
+</html>
