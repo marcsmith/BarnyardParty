@@ -266,6 +266,7 @@ html { width: 1em; }
     width: 500px;
     height: 450px;
 	top: 30px;
+	/*-webkit-transition: top 1s linear;*/
 }
 #heart:before,
 #heart:after {
@@ -304,18 +305,43 @@ html { width: 1em; }
 }				
 
 #heart:after {
-        -webkit-box-shadow: 10px -3px 10px 1px rgba(0,0,0,0.0);
-        -moz-box-shadow: 10px -3px 10px 1px rgba(0,0,0,0.0);
-        -o-box-shadow: 10px -3px 10px 1px rgba(0,0,0,0.0);
-        box-shadow: 10px -3px 10px 1px rgba(0,0,0,0.0);
-		-webkit-transition: opacity 1s linear;
+        -webkit-box-shadow: 10px -3px 10px 1px rgba(0,0,0,0.8);
+        -moz-box-shadow: 10px -3px 10px 1px rgba(0,0,0,0.8);
+        -o-box-shadow: 10px -3px 10px 1px rgba(0,0,0,0.8);
+        box-shadow: 10px -3px 10px 1px rgba(0,0,0,0.8);
 }
 
 
-#heart:after:hover {
-	opacity: 0.8;
-	left: 10px;
+/*#heart:hover {
+	top: 100px;
+}*/
+
+
+
+
+
+#heart:hover {
+	z-index: 24 !important;
+	-webkit-animation-name: SHOWTIME;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
 }
+@-webkit-keyframes SHOWTIME {
+    from {
+        -webkit-transform: scale(1.0) rotate(0deg);
+	}
+    20% {
+        -webkit-transform: scale(1.05) rotate(0deg);
+	}
+    45% {
+        -webkit-transform: scale(1.0) rotate(0deg);
+	}
+    100% {
+        -webkit-transform: scale(1.0) rotate(0deg);
+	}
+}
+
 
 
 
