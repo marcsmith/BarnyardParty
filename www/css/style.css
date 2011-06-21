@@ -254,11 +254,68 @@ ul, ol, li { margin: 0; list-style:none; list-style-image: none; }
 }
 
 
+@media screen and (max-width: 1024px) {
+	body {
+		background-color: green;
+	}
+}
+
+html { width: 1em; }
+#heart {
+    position: relative;
+    width: 500px;
+    height: 450px;
+	top: 30px;
+}
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 250px;
+    top: 0;
+    width: 250px;
+    height: 400px;
+    background: red;
+    -moz-border-radius: 250px 250px 0 0;
+    border-radius: 250px 250px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}				
+
+#heart:after {
+        -webkit-box-shadow: 10px -3px 10px 1px rgba(0,0,0,0.0);
+        -moz-box-shadow: 10px -3px 10px 1px rgba(0,0,0,0.0);
+        -o-box-shadow: 10px -3px 10px 1px rgba(0,0,0,0.0);
+        box-shadow: 10px -3px 10px 1px rgba(0,0,0,0.0);
+		-webkit-transition: opacity 1s linear;
+}
 
 
-
-
-
+#heart:after:hover {
+	opacity: 0.8;
+	left: 10px;
+}
 
 
 
